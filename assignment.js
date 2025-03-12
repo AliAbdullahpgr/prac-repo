@@ -19,9 +19,11 @@ console.log(x / y);
 
 let str = "123";
 let num = Number(str);
+let b = 1;
+b = String(num); 
 console.log(num);
 str = String(num);
-console.log(str);
+console.log(b);
 
 let numCheck = 11;
 if (numCheck % 2 === 1) {
@@ -42,13 +44,8 @@ if (checkAge > 0 && checkAge < 13) {
 }
 
 let n = 11;
-if (n > 0) {
-  console.log("Positive");
-} else if (n === 0) {
-  console.log("Zero");
-} else {
-  console.log("Negative");
-}
+console.log(n > 0 ? "Positive" : n === 0 ? "Zero" : "Negative");
+
 
 let light = "Green";
 switch (light) {
